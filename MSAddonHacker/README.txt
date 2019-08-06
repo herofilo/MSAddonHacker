@@ -5,10 +5,18 @@ Last Update: 2019/08/06
 
 A little tool to do a few assorted operations on a selected addon installed on your system:
 	- Extracting one or more files in the Manifest file (assetData.jar) into the contents (Data) folder of the addon
+		Of some interest, if 
+			a) the 'meaty' files of an addon have been removed and you'd like to either making some changes or simply studying.
+				However, take into account that only model/template/part description files are part of the Manifest file
+			b) you've badly messed with some of the asset description files
 	- Updating files in the Manifest file with those in the contents folder of the addon. A backup file of Manifest file can be created in the process.
+		This can be useful for making some minor change in one or more description file of a model, template or part and make it effective without re-publishing the addon. Much faster, indeed!
 	- Restoring the Manifest file from a backup previously created
-	- Removing the 'meaty' files from the contents folder
+		If you have changed your mind
+	- Removing the 'meaty' files (see below) from the contents folder
+		This can be of some use for reducing the footprint of your addon, especially if it includes large mesh files (.cmf)
 	- Creating an addon package file (.addon), either full or with the 'meaty' files removed.
+		This can be of some use for reducing the size of the addon package file and/or somehow protecting your work, especially if some mesh (.cmf) file is implied.
 	
 The 'meaty' files are those that can be safely removed from the contents (Data) folder of the addon, once this has been published in the Modder's Workshop of Moviestorm, for their info is contained in other meta-info files of the addon. They include the following files:
 	- Asset description files (they are included in the Manifest file (assetData.jar):
