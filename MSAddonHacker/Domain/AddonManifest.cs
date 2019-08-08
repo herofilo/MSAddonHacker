@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using MSAddonHacker.Persistence;
+using MSAddonUtilLib.Persistence;
 using SevenZip;
 
 namespace MSAddonHacker.Domain

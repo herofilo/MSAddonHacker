@@ -73,9 +73,11 @@ You can now operate on the currently open addon (see above). These controls are 
 		
 VERSION HISTORY
 ---------------
-* v1.0.1 (20190808): added icon to the executable and the main form
+* v1.0.1 (2019-08-08): 
+	- added icon to the executable and the main form
+	- some utility classes and methods moved to shared lib MsAddonUtilLib (in its own project)
 
-* v1.0.0 (20190806): first public release
+* v1.0.0 (2019-08-06): first public release
 
 
 

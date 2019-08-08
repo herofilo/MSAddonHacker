@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using MSAddonHacker.Domain;
 using MSAddonHacker.UserInterface;
 using MSAddonHacker.Util;
+using MSAddonUtilLib.Util;
 
 namespace MSAddonHacker
 {
@@ -450,7 +451,7 @@ namespace MSAddonHacker
 
             if (cbManifestBackup.Checked)
             {
-                string backupFile = Utils.CreateManifestBackupFile(_addon.AddonManifest.ManifestFilePath, out errorText);
+                string backupFile = MiscUtils.CreateManifestBackupFile(_addon.AddonManifest.ManifestFilePath, out errorText);
                 if (backupFile == null)
                 {
                     tbLog.AppendText($"Creating Manifest backup, ERROR: {errorText}\n");
