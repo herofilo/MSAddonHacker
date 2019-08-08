@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.tbAddonFolder = new System.Windows.Forms.TextBox();
             this.tbLog = new System.Windows.Forms.TextBox();
@@ -46,6 +47,7 @@
             this.cmiMftCopySelected = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiMftRestore = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContents = new System.Windows.Forms.Panel();
+            this.pbRemoveMeatyFiles = new System.Windows.Forms.Button();
             this.pbRestoreBackup = new System.Windows.Forms.Button();
             this.cbManifestBackup = new System.Windows.Forms.CheckBox();
             this.pbDataToManifest = new System.Windows.Forms.Button();
@@ -57,7 +59,6 @@
             this.cmiDataCopySelected = new System.Windows.Forms.ToolStripMenuItem();
             this.sfdCreatePack = new System.Windows.Forms.SaveFileDialog();
             this.ofdSelectBackupFile = new System.Windows.Forms.OpenFileDialog();
-            this.pbRemoveMeatyFiles = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gbManifest.SuspendLayout();
             this.cmManifestFileMenu.SuspendLayout();
@@ -228,6 +229,16 @@
             this.pnlContents.Size = new System.Drawing.Size(991, 381);
             this.pnlContents.TabIndex = 6;
             // 
+            // pbRemoveMeatyFiles
+            // 
+            this.pbRemoveMeatyFiles.Location = new System.Drawing.Point(875, 22);
+            this.pbRemoveMeatyFiles.Name = "pbRemoveMeatyFiles";
+            this.pbRemoveMeatyFiles.Size = new System.Drawing.Size(96, 23);
+            this.pbRemoveMeatyFiles.TabIndex = 11;
+            this.pbRemoveMeatyFiles.Text = "Remove Meat";
+            this.pbRemoveMeatyFiles.UseVisualStyleBackColor = true;
+            this.pbRemoveMeatyFiles.Click += new System.EventHandler(this.pbRemoveMeatyFiles_Click);
+            // 
             // pbRestoreBackup
             // 
             this.pbRestoreBackup.Enabled = false;
@@ -324,16 +335,6 @@
             this.ofdSelectBackupFile.Filter = "Backup files|*.jar";
             this.ofdSelectBackupFile.RestoreDirectory = true;
             // 
-            // pbRemoveMeatyFiles
-            // 
-            this.pbRemoveMeatyFiles.Location = new System.Drawing.Point(875, 22);
-            this.pbRemoveMeatyFiles.Name = "pbRemoveMeatyFiles";
-            this.pbRemoveMeatyFiles.Size = new System.Drawing.Size(96, 23);
-            this.pbRemoveMeatyFiles.TabIndex = 11;
-            this.pbRemoveMeatyFiles.Text = "Remove Meat";
-            this.pbRemoveMeatyFiles.UseVisualStyleBackColor = true;
-            this.pbRemoveMeatyFiles.Click += new System.EventHandler(this.pbRemoveMeatyFiles_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,6 +344,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbLog);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "MSAddonHacker  ver.";

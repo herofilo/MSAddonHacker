@@ -1,7 +1,7 @@
 MSAddonHacker, by jamoram
 
-Current version: 1.0.0
-Last Update: 2019/08/06
+Current version: 1.0.1
+Last Update: 2019/08/08
 
 A little tool to do a few assorted operations on a selected addon installed on your system:
 	- Extracting one or more files in the Manifest file (assetData.jar) into the contents (Data) folder of the addon
@@ -73,6 +73,8 @@ You can now operate on the currently open addon (see above). These controls are 
 		
 VERSION HISTORY
 ---------------
+* v1.0.1 (20190808): added icon to the executable and the main form
+
 * v1.0.0 (20190806): first public release
 
 

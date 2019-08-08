@@ -2,4 +2,6 @@
 MSAddonHacker Change Log
 ========================
 
+* v1.0.1 (2019-08-08): added icon to the executable and the main form
+
 * v1.0.0 (2019-08-06): first version fully functional
